@@ -66,19 +66,6 @@ The `find_optimal_clusters_silhouette` function calculates the optimal number of
 Once the optimal number of clusters is determined, the script fits and predicts the clusters using the chosen clustering method (either AgglomerativeClustering or KMeans). It then identifies the cluster the last peak and last trough belong to and computes the maximum high and minimum low of the last peak and trough clusters, respectively, which correspond to the resistance and support levels.
 
 Finally, the script uses Matplotlib to plot the stock data, support and resistance levels, and volume. It displays the stock's high, low, and close prices, along with the support and resistance levels as dashed lines. The peaks and troughs are color-coded based on their cluster group, with markers representing the different clusters. The resulting plot provides a comprehensive view of the stock's historical data, allowing users to visually identify support and resistance levels and inform their trading decisions.
-## Technical Description: Part 1 - Data Retrieval and Preprocessing
-
-The script begins by importing the necessary libraries, setting up environment variables for Alpaca API authentication, and initializing the command-line argument parser. The user can specify the stock symbol, number of days to consider, minimum number of clusters, and the clustering method to be used. The script retrieves the stock data using the Alpaca API in the `get_stock_data` function, and calculates the peaks and troughs in the stock data using the `find_peaks_troughs` function, which leverages the `argrelextrema` function from the `scipy` library.
-
-After obtaining the stock data, the code computes the high and low values in the peaks and troughs arrays using the peak_indices and trough_indices arrays. The script then reshapes the peaks and troughs arrays into 2D arrays and calculates the maximum number of clusters for peaks and troughs. With this information, the code can determine the optimal number of clusters for support and resistance levels.
-
-## Technical Description: Part 2 - Clustering and Plotting
-
-The `find_optimal_clusters_silhouette` function calculates the optimal number of clusters based on the silhouette score, a measure of the clustering quality. The function takes the data, minimum number of clusters, maximum number of clusters, and clustering method as arguments. Based on the user's choice, either agglomerative clustering or k-means clustering is used. The script iterates over the range of cluster values and calculates silhouette scores for each number of clusters. The optimal number of clusters corresponds to the highest silhouette score.
-
-Once the optimal number of clusters is determined, the script fits and predicts the clusters using the chosen clustering method (either AgglomerativeClustering or KMeans). It then identifies the cluster the last peak and last trough belong to and computes the maximum high and minimum low of the last peak and trough clusters, respectively, which correspond to the resistance and support levels.
-
-Finally, the script uses Matplotlib to plot the stock data, support and resistance levels, and volume. It displays the stock's high, low, and close prices, along with the support and resistance levels as dashed lines. The peaks and troughs are color-coded based on their cluster group, with markers representing the different clusters. The resulting plot provides a comprehensive view of the stock's historical data, allowing users to visually identify support and resistance levels and inform their trading decisions.
 
 ## Contributing
 

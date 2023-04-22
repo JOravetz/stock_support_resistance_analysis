@@ -5,7 +5,7 @@
 ## Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Technical Description](#technical_description)
+3. [Technical Description](#Technical Description: Part 1 - Data Retrieval and Preprocessing)
 4. [Contributing](#contributing)
 5. [License](#license)
 

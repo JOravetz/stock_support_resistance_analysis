@@ -21,7 +21,7 @@
 The script depends on several Python libraries. You can install them using the following command:
 
 ```
-   pip install numpy pandas matplotlib alpaca-trade-api pandas-market-calendars scipy sklearn
+pip install numpy pandas matplotlib alpaca-trade-api pandas-market-calendars scipy sklearn
 ```
 
 ### Environment Variables
@@ -29,9 +29,9 @@ The script depends on several Python libraries. You can install them using the f
 Set up the following environment variables with your Alpaca API credentials:
 
 ```
-   export APCA_API_KEY_ID=your_alpaca_api_key_id
-   export APCA_API_SECRET_KEY=your_alpaca_api_secret_key
-   export APCA_API_BASE_URL=https://paper-api.alpaca.markets # or https://api.alpaca.markets for live trading
+export APCA_API_KEY_ID=your_alpaca_api_key_id
+export APCA_API_SECRET_KEY=your_alpaca_api_secret_key
+export APCA_API_BASE_URL=https://paper-api.alpaca.markets # or https://api.alpaca.markets for live trading
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ The script accepts the following command-line arguments:
 ### Example
 
 ```
-   python stock_support_resistance_analysis.py --symbol TQQQ --days_ago 252 --min_clusters 5 --cluster_type agglomerative
+python stock_support_resistance_analysis.py --symbol TQQQ --days_ago 252 --min_clusters 5 --cluster_type agglomerative
 ```
 
 This command will fetch stock data for TQQQ for the past 252 trading days and analyze it to determine the support and resistance levels. It will use agglomerative clustering with a minimum of 5 clusters.

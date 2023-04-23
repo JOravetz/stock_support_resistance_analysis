@@ -111,13 +111,13 @@ Support and resistance levels are significant price levels at which a stock tend
 
 2. Entry points:
 
-* When a stock approaches a support level and shows signs of bouncing off that level (e.g., the formation of a bullish candlestick pattern or increased buying volume), it could be a potential buying opportunity. The idea is that the support level will hold, and the price will rebound upwards.
-* Conversely, when a stock approaches a resistance level and shows signs of reversing (e.g., bearish candlestick pattern or increased selling volume), it could signal a potential short-selling opportunity. The expectation is that the resistance level will hold, and the price will drop.
+- When a stock approaches a support level and shows signs of bouncing off that level (e.g., the formation of a bullish candlestick pattern or increased buying volume), it could be a potential buying opportunity. The idea is that the support level will hold, and the price will rebound upwards.
+- Conversely, when a stock approaches a resistance level and shows signs of reversing (e.g., bearish candlestick pattern or increased selling volume), it could signal a potential short-selling opportunity. The expectation is that the resistance level will hold, and the price will drop.
 
 3. Exit points:
 
-* If you're in a long position, consider taking profits or tightening your stop-loss order when the price approaches a significant resistance level. There's a higher probability of the stock reversing or consolidating at these levels.
-* If you're in a short position, consider covering your short or tightening your stop-loss order when the price approaches a support level, as the stock may reverse or consolidate at these points.
+- If you're in a long position, consider taking profits or tightening your stop-loss order when the price approaches a significant resistance level. There's a higher probability of the stock reversing or consolidating at these levels.
+- If you're in a short position, consider covering your short or tightening your stop-loss order when the price approaches a support level, as the stock may reverse or consolidate at these points.
 
 4. Stop-loss orders: Place stop-loss orders below support levels (for long positions) or above resistance levels (for short positions) to protect against unexpected price movements. If the stock breaches the support or resistance level, it may signal a change in market sentiment or a continuation of the trend, which could result in further price movement against your position.
 

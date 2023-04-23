@@ -7,7 +7,10 @@
 2. [Usage](#usage)
 3. [Summary](#summary)
 4. [Contributing](#contributing)
-5. [License](#license)
+5. [Improvements](#improvements)
+6. [Trading](#trading)
+7. [License](#license)
+7. [Disclaimer](#disclaimer)
 
 ## Installation
 
@@ -78,7 +81,55 @@ Contributions are welcome! Please follow these steps to contribute:
 3. Commit your changes to the new branch
 4. Create a pull request to merge your changes to the main repository
 
+## Improvements
+
+### Consider the following suggestions to improve the code for more accurate support and resistance levels.
+
+1. Combine peaks and troughs: Instead of finding support and resistance levels separately for peaks and troughs, you can combine them into one dataset and then cluster. This way, the algorithm will consider both peaks and troughs when finding support and resistance levels, potentially leading to more accurate levels.
+
+2. Use other clustering algorithms: The current code uses Agglomerative Clustering, which is a hierarchical clustering algorithm. You can try other clustering algorithms like DBSCAN or K-Means, which may provide different results, and see which algorithm gives better support and resistance levels for your use case.
+
+3. Consider additional features: You can experiment with adding other technical indicators as features (e.g., RSI, MACD) or consider other market-related information (e.g., trading volume, order book data) when clustering. Make sure to normalize the features to bring them to a similar scale before clustering.
+
+4. Adjust the smoothing parameter: The code currently uses argrelextrema function from scipy.signal to identify peaks and troughs, which uses a comparator function to compare neighboring data points. You can experiment with different comparator functions or adjust the parameters of the current comparator function to find peaks and troughs with varying levels of smoothness.
+
+5. Moving averages: You can use moving averages to smooth out the price data and reduce noise before identifying peaks and troughs. This might help in finding more reliable support and resistance levels.
+
+6. Improve the evaluation metric: Instead of using only the silhouette score, you can try other cluster evaluation metrics like Calinski-Harabasz score or Davies-Bouldin score to determine the optimal number of clusters.
+
+7. Ensemble approach: You can combine the results of different clustering algorithms to create ensemble support and resistance levels. This can potentially lead to more robust and accurate levels.
+
+8. Manual input or domain knowledge: While using an automated approach can be beneficial, incorporating human expertise or manual input based on domain knowledge can help refine the support and resistance levels identified by the algorithm.
+
+## Trading
+
+Support and resistance levels are significant price levels at which a stock tends to reverse its direction or experience increased buying and selling pressure. These levels can be used to make informed trading decisions by identifying potential entry and exit points.
+
+### Here's a general outline on how to use support and resistance levels in stock trading:
+
+1. Identify support and resistance levels: Analyze historical price data and chart patterns to identify key support and resistance levels. You can use tools like horizontal trendlines, moving averages, or Fibonacci retracements to help spot these levels.
+
+2. Entry points:
+
+* When a stock approaches a support level and shows signs of bouncing off that level (e.g., the formation of a bullish candlestick pattern or increased buying volume), it could be a potential buying opportunity. The idea is that the support level will hold, and the price will rebound upwards.
+* Conversely, when a stock approaches a resistance level and shows signs of reversing (e.g., bearish candlestick pattern or increased selling volume), it could signal a potential short-selling opportunity. The expectation is that the resistance level will hold, and the price will drop.
+
+3. Exit points:
+
+* If you're in a long position, consider taking profits or tightening your stop-loss order when the price approaches a significant resistance level. There's a higher probability of the stock reversing or consolidating at these levels.
+* If you're in a short position, consider covering your short or tightening your stop-loss order when the price approaches a support level, as the stock may reverse or consolidate at these points.
+
+4. Stop-loss orders: Place stop-loss orders below support levels (for long positions) or above resistance levels (for short positions) to protect against unexpected price movements. If the stock breaches the support or resistance level, it may signal a change in market sentiment or a continuation of the trend, which could result in further price movement against your position.
+
+5. Confirmations: Use additional technical indicators and chart patterns to confirm the strength of support and resistance levels. For example, indicators like the Relative Strength Index (RSI), Stochastic Oscillator, or Moving Average Convergence Divergence (MACD) can help confirm trend reversals and momentum shifts.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Disclaimer
+
+### Legal Disclaimer
+
+This script is for educational purposes only and is not intended to be used as financial or investment advice. Use this tool at your own risk. The author is not responsible for any financial losses or damages incurred as a result of using this tool. Always consult a financial professional before making any investment decisions.
 
